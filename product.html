@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Review</title>
+		<link rel="stylesheet" href="./asset/reset.css" />
+		<link rel="stylesheet" href="./asset/product.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+</head>
+<body>
+    <div class="coat"></div>
+		<main>
+			<header>
+				<!-- Bang dang nhap -->
+				<div class="login">
+					<div class="login-title"><p>LOGIN</p></div>
+					<div class="username">
+						<input
+							placeholder="Enter your username ......"
+							type="text"
+							name=""
+							id=""
+						/>
+						<p id="username-text">Username phải lớn hơn 5 kí tự</p>
+					</div>
+					<div class="password">
+						<input
+							placeholder="Enter your password ......"
+							type="password"
+							name=""
+							id=""
+						/>
+						<p id="password-text">Password phải lớn hơn 5 kí tự</p>
+					</div>
+					<div class="gmail">
+						<input
+							placeholder="Enter your email ......"
+							type="text"
+							name=""
+							id=""
+						/>
+						<p id="gmail-text">Bạn phải nhập đúng định dạng email</p>
+					</div>
+					<div class="button"><p>LOGIN</p></div>
+					<div class="login-subtitle">
+						<div class="question">
+							<p>Do not have an account?</p>
+						</div>
+						<div class="sign-up"><p>SIGN UP</p></div>
+					</div>
+					<div class="exit">X</div>
+				</div>
+				<!-- Bang thong bao sau khi dang nhap -->
+				<div class="login-success">
+					<div class="login-notify"><p>Bạn đã đăng nhập thành công</p></div>
+					<i class="fa-solid fa-circle-check"></i>
+					<div class="exit">X</div>
+				</div>
+				<div class="login-fail">
+					<div class="login-notify"><p>Sai tài khoản hoặc mật khẩu vui lòng thử lại</p></div>
+					<i class="fa-solid fa-circle-xmark"></i>
+					<div class="exit">X</div>
+				</div>
+				<!-- Dinh huong -->
+				<nav>
+					<div class="nav-search">
+						<img src="./asset/image/logo.png" alt="" />
+						<div class="search">
+							<input
+								type="text"
+								name=""
+								id=""
+								placeholder="Search something........"
+							/>
+							<div class="search-icon">
+								<i class="search-btn fas fa-search"></i>
+							</div>
+						</div>
+						<div class="cart">
+							<i class="cart-btn fas fa-cart-plus"></i>
+						</div>
+						<button>LOGIN</button>
+						<div class="avatar">
+							<img src="./asset/image/avatar.jpg" alt="">
+						</div>
+						<p></p>
+					</div>
+				</nav>
+			</header>
+			<div class="product-row">
+				<div class="product-image">
+					<img src="./asset/image/131mobile4.jpg" alt="">
+					<div class="product-list-image">
+						<div class="product-image-select"><img src="./asset/image/131mobile4.jpg" alt=""></div>
+						<div class="product-image-select"><img src="./asset/image/131mobile4.jpg" alt=""></div>
+						<div class="product-image-select"><img src="./asset/image/131mobile4.jpg" alt=""></div>
+						<div class="product-image-select"><img src="./asset/image/131mobile4.jpg" alt=""></div>
+					</div>
+					<div class="share">
+						<p>Chia Sẻ:</p>
+						<div class="share-image"><img src="./asset/image/zalo.jpg" alt=""></div>
+						<div class="share-image"><img src="./asset/image/facebook.png" alt=""></div>
+						<div class="share-image"><img src="./asset/image/messenger.png" alt=""></div>
+						<div class="share-image"><img src="./asset/image/twichter.png" alt=""></div>
+					</div>
+				</div>
+				<div class="product-info">
+					<div class="title"><p>IPHONE 13 MINI NEW</p></div>
+					<div class="row row1">
+						<div class="star">
+							<i class="appreciate-item-btn fas fa-star"></i>
+							<i class="appreciate-item-btn fas fa-star"></i>
+							<i class="appreciate-item-btn fas fa-star"></i>
+							<i class="appreciate-item-btn fas fa-star"></i>
+							<i class="appreciate-item-btn fas fa-star"></i>
+						</div>
+						<div class="evaluate-number"><p>40 Đánh giá</p></div>
+						<div class="sold-number"><p>467 Đã bán</p></div>
+					</div>
+					<div class="row row2">
+						<div class="price"><p>1100$</p></div>
+						<div class="sale-off">
+							<p>5% Giảm</p>
+						</div>
+					</div>
+					<div class="row row3">
+						<div><p>Vận chuyển tới</p></div>
+						<select name="" id="">
+							<option value="">An Giang</option>
+							<option value="">Kiên Giang</option>
+							<option value="">TP HCM</option>
+							<option value="">Bình Dương</option>
+							<option value="">Bình Phước</option>
+							<option value="">Bình Thuận</option>
+						</select>
+					</div>
+					<div class="row row4">
+						<div><p>Màu sắc</p></div>
+						<div class="select-color">
+							<div class="select-info"><p>Trắng</p></div>
+							<div class="select-info"><p>Đỏ</p></div>
+							<div class="select-info"><p>Xanh</p></div>
+							<div class="select-info"><p>Tím</p></div>
+						</div>
+					</div>
+					<div class="row row5">
+						<div><p>Số lượng</p></div>
+						<div class="select-number">
+							<div class="change"><p>-</p></div>
+							<div class="number-select"><p>1</p></div>
+							<div class="change"><p>+</p></div>
+						</div>
+					</div>
+					<div class="row row6">
+						<div class="btn add-product">
+							<i class="fas fa-cart-plus"></i>
+							<p>Thêm vào giỏ</p>
+						</div>
+						<div class="btn back-home">
+							<p>Về trang chủ</p>
+						</div>
+					</div>
+					<div class="row row7">
+						<div><p>7 ngày miễn phí đổi trả</p></div>
+						<div><p>Hàng chính hãng 100%</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="comment">
+				<p>Comment Review</p>
+				<input type="text" name="" id="" placeholder="Enter your appreciate....">
+				<div class="btn">Đánh giá</div>
+			</div>
+            <footer>
+					<div class="done">
+						<div class="container">
+							Lorem ipsum dolor sit amet consectetur, adipisicing
+							elit. Omnis reprehenderit aut reiciendis ea
+							molestias beatae pariatur, sint animi eius fuga
+							ducimus rerum veritatis ipsam maiores nam expedita
+							illo non repellendus? Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Eum sit eos fugit
+							nobis molestias repudiandae vero, assumenda rem
+							culpa. Dignissimos nemo ducimus at vel fugiat ipsa
+							distinctio, illo obcaecati animi. Officia soluta
+							repellendus at possimus eius quos, eaque dicta
+							dolore. Non aspernatur eligendi fuga magnam quod.
+							Deserunt consequatur autem corrupti quibusdam
+							praesentium nostrum magnam modi labore maiores,
+							recusandae iusto consectetur. Lorem ipsum dolor sit
+							amet consectetur adipisicing elit. Ipsa ex facilis
+							voluptate animi deleniti optio quibusdam voluptas,
+							odit dolore nemo excepturi omnis doloremque quae
+							est, laboriosam recusandae soluta, nam
+							necessitatibus. Aliquam optio quaerat esse veritatis
+							molestiae earum eius totam placeat rem eveniet
+							quibusdam, iusto quam velit. Libero voluptatum
+							commodi similique placeat eligendi provident qui
+							quidem? Cumque numquam minima fugiat nisi! Fugit,
+							voluptas alias? Vero, reiciendis iste! Tenetur nam
+							ea officia, natus consequuntur pariatur velit
+							reprehenderit quidem porro dignissimos soluta nihil
+							corrupti debitis laborum atque et amet, quas
+							expedita est asperiores!
+						</div>
+					</div>
+			</footer>
+		</main>
+    <script src="./product.js"></script>
+</body>
+</html>

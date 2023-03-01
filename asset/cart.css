@@ -1,0 +1,377 @@
+html {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+* {
+	font-size: 62.5%;
+	text-decoration: none;
+}
+/* Navbar */
+nav {
+	height: 90px;
+	width: 100vw;
+	background-color: #0b1727;
+	border-bottom: 1px #ffeb01 solid;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+/* Navbar / Nav-search */
+.nav-search {
+	display: flex;
+	align-items: center;
+}
+
+.nav-search img {
+	margin-right: 200px;
+}
+
+.nav-search .search {
+	width: 750px;
+	height: 36px;
+	margin-right: 200px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.nav-search .search-icon {
+	font-size: 1rem;
+	height: 28px;
+	width: 60px;
+	background-color: #ffeb01;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.nav-search input {
+	width: 680px;
+	height: 33px;
+	border: none;
+	margin-right: 3px;
+	font-size: 1rem;
+}
+
+.nav-search .cart {
+	color: white;
+	font-size: 1.8rem;
+	margin-right: 30px;
+	position: relative;
+	display: block;
+}
+
+.nav-search .cart:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search .cart ~ button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search .cart::before {
+	content: "0";
+	color: black;
+	text-align: center;
+	font-size: 1.2rem;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	right: -19px;
+	top: -5px;
+}
+
+.nav-search button {
+	width: 70px;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: #ffeb01;
+	font-weight: 700;
+	font-size: 0.8rem;
+	display: block;
+}
+
+.nav-search .avatar{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 70px;
+	margin-right: 10px;
+	display: none;
+}
+
+.nav-search .avatar ~ p{
+	font-size: 1rem;
+	font-weight: 900;
+	color: white;
+	display: none;
+}
+
+/* Login success and fail */
+.login-success{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: green;
+	color: white;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+	font-size: 1.5rem;
+}
+
+.login-fail{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+	font-size: 1.5rem;
+}
+
+.login-success > i, .login-fail > i{
+	font-size: 4rem;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.login-success > div, .login-fail > div{
+	margin-top: 50px;
+}
+
+.login-success > .exit, .login-fail > .exit{
+	margin-top: -2px;
+}
+
+/* Login */
+.login {
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: #fff;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+}
+
+.login .gmail {
+	display: none;
+}
+
+.login .login-title {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.login input {
+	margin-top: 10px;
+	width: 182px;
+	height: 27px;
+}
+
+.login .button {
+	margin-top: 10px;
+	padding: 10px 10px;
+	max-width: 120px;
+	border-radius: 10px;
+	background-color: #ffeb01;
+	margin-left: 150px;
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.login .button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.login input ~ p {
+	color: red;
+	font-size: 0.8rem;
+	font-weight: 900;
+	display: none;
+}
+
+#username-text{
+	margin-left: -22px;
+}
+
+#password-text{
+	margin-left: -24px;
+}
+
+#gmail-text{
+	margin-left: 14px;
+}
+
+.login-subtitle {
+	display: flex;
+	align-items: center;
+	margin-left: 130px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.login-subtitle .question {
+	font-size: 0.8rem;
+	margin-right: 6px;
+}
+
+.login-subtitle .sign-up {
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.login-subtitle .sign-up:hover {
+	cursor: pointer;
+}
+
+/* Lớp phủ */
+.coat {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	background-color: grey;
+	opacity: 0.5;
+	position: fixed;
+}
+
+/* Done */
+
+.done {
+	width: 100%;
+	height: 300px;
+	margin-top: 170px;
+	background-color: #0b1727;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 40%;
+	font-size: 1rem;
+	padding-top: 20px;
+}
+
+/* Row1 */
+.row1{
+    margin-top: 92px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right,#0B1727,#FFEB01);
+    border-radius: 8px 0 0 8px;
+}
+
+.row1 .text{
+	margin-left: 30px;
+}
+
+.row1 p{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 40px;
+}
+
+.row2{
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #0b1727;
+}
+
+.row2 .text1{
+    margin-left: 31px;
+    margin-right: 620px;
+}
+
+.row2 .text{
+    margin-right: 100px;
+}
+
+.product-list{
+    margin-top: 10px;
+}
+
+/* Product */
+.product{
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	font-size: 1.2rem;
+}
+
+.product img{
+	width: 100px;
+	height: 100px;
+}
+
+.product .content{
+	margin-left: 20px;
+	line-height: 27px;
+	max-width: 537px;
+}
+
+.product .title{
+	font-weight: 900;
+}
+
+.product .price{
+	margin-left: 95px;
+}
+
+.product .number-choose{
+	display: flex;
+	margin-left: 90px;
+}
+
+.product .number-choose .btn{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #0b1727;
+	text-align: center;
+}
+
+.product .number-choose p{
+	margin: 0 20px 0 20px;
+}
+
+.product .sum{
+	margin-left: 110px;
+}
+
+.product .action{
+	display: flex;
+	margin-left: 90px;
+}
+
+.product .action .btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #FFEB01;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 20px;
+}
